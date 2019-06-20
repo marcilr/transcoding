@@ -1,0 +1,66 @@
+README
+Created Sat Feb 14 10:38:37 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+atomic-parsley.txt
+  Atomic Parsley
+  Set iTunes style metadata with alacrity...
+  ..or purge them with the metaEnema
+  http://atomicparsley.sourceforge.net/
+
+cinavia/
+  Copy protection
+  https://torrentfreak.com/dvd-ranger-cracks-unbeatable-cinavia-anti-piracy-system-140524/
+
+copy-vs-encode.txt
+  Copy vs. Encode
+  FFmpeg: The ultimate Video and Audio Manipulation Tool
+  February 24, 2012 by slhck. 17 comments
+  Difference between video codecs and containers.
+  http://blog.superuser.com/2012/02/24/ffmpeg-the-ultimate-video-and-audio-manipulation-tool/
+
+h264enc.txt
+  package:
+    h264enc - script to encode video or DVD in H.264/AVC/MPEG-4 Part 10
+
+  Description: script to encode video or DVD in H.264/AVC/MPEG-4 Part 10
+  A shell script which makes it easy to encode DVDs or video files to the
+  H.264/AVC/MPEG-4 Part 10 video format using MEncoder from the MPlayer
+  project.
+
+mp4-vs-m4v.txt
+  Containers
+  Has mp4 vs. m4v section
+  https://trac.handbrake.fr/wiki/Containers
+
+mpeg/
+  Moving Picture Experts Group (MPEG)
+  http://en.wikipedia.org/wiki/Moving_Picture_Experts_Group
+
+qtfaststart.txt
+  qtfaststart
+  Quicktime atom positioning in Python for fast streaming.
+  Enable streaming and pseudo-streaming of Quicktime and MP4 files by moving metadata
+  and offset information to the front of the file.
+  https://pypi.python.org/pypi/qtfaststart/1.5
+
+update-title-avi.txt
+  How to change metadata with ffmpeg/avconv without creating a new file?
+  You can do this with FFmpeg like so:
+    ffmpeg -i input.avi -metadata key=value -codec copy output.avi
+  https://stackoverflow.com/questions/11474532/how-to-change-metadata-with-ffmpeg-avconv-without-creating-a-new-file
+
+update-title.txt
+  The quick fix was use of mp4tags in the mp4v2-utils package:
+    mp4v2-utils - end-to-end system to explore streaming multimedia
+
+  # aptitude install mp4v2-utils
+  $ mp4tags -s "Music and Lyrics" Music\ and\ Lyrics.m4v
+
+video-formats.txt
+  Video formats such as SD, HD, Full HD, 720p, 1080p, and 1080i 
+  FFmpeg Cheat Sheet
+  http://rodrigopolo.com/ffmpeg/cheats.php
