@@ -1,6 +1,6 @@
 README
-Created Fri Dec 16 22:14:30 AKST 2016
-Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+Created Created Tue Jan 15 18:56:17 AKST 2013
+Copyright (C) 2013-2019 by Raymond E. Marcil <marcilr@gmail.com>
 
 
 Filelist
@@ -49,6 +49,9 @@ handbrakecli/
   Very convenient cli utility for ripping and transcoding videos.
   Using HandBrakeCLI
   https://trac.handbrake.fr/wiki/CLIGuide
+
+lib/
+  Libraries
 
 libdvdcss2/
   libdvdcss2 is a highly portable library for accessing and unscrambling
