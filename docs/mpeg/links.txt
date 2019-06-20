@@ -1,0 +1,35 @@
+links.txt
+Created Fri Feb  8 16:47:58 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+mpeg related links
+
+
+Links
+=====
+Comparison of container formats
+From Wikipedia, the free encyclopedia
+Four mpeg container formats:
+o MP4
+o MPEG Video File (.mpg, .mpeg)
+o MPEG program stream PS (.ps)
+o MPEG transport stream TS (.ts)
+o BDAV MPEG-2 transport stream (.m2ts)
+http://en.wikipedia.org/wiki/Comparison_of_container_formats
+
+MEncoder is part of the mencoder package.
+Has notes on mpeg to mp4 format.
+https://wiki.archlinux.org/index.php/MEncoder
+
+Moving Picture Experts Group
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Moving_Picture_Experts_Group
+
+MPEG-4
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Mpeg4
+
+Useful ffmpeg and mencoder commands on Ubuntu 9.10 Karmic
+http://www.binarytides.com/useful-ffmpeg-and-mencoder-commands-on-ubuntu-9-10-karmic-koala/
+
