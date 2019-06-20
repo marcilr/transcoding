@@ -1,0 +1,12 @@
+# .gitignore
+# Created Wed Jun 19 19:38:45 AKDT 2019
+# by Raymond E. Marcil <rmarcil@gci.com>
+#
+# Links
+# =====
+# gitignore - Specifies intentionally untracked files to ignore
+# https://git-scm.com/docs/gitignore
+#
+
+.DS_Store
+mencoder/
