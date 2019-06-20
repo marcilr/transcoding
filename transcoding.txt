@@ -8,8 +8,7 @@ video and audio files) from one format to another.  It involves extracting
 tracks from a digital media file, decoding the tracks, filtering, encoding,
 and then multiplexing the new tracks into a new container.  Transcoding
 will reduce the quality of the tracks unless lossless formats are used.
-
-linuxlinks.com/
+--linuxlinks.com/
 
 
 Links
