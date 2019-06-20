@@ -1,0 +1,33 @@
+mpeg4.txt
+Created Fri Feb  8 16:48:53 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+MPEG-4 is a method of defining compression of audio and visual
+(AV) digital data.  It was introduced in late 1998 and designated
+a standard for a group of audio and video coding formats and
+related technology agreed upon by the ISO/IEC Moving Picture
+Experts Group (MPEG) (ISO/IEC JTC1/SC29/WG11) under the formal
+standard ISO/IEC 14496 - Coding of audio-visual objects.  Uses of
+MPEG-4 include compression of AV data for web (streaming media)
+and CD distribution, voice (telephone, videophone) and broadcast
+television applications.
+--wikipedia.org/wiki/Mpeg4
+
+
+litzdog911 - 09-20-06, 05:09 PM
+-------------------------------
+MPEG4 is a newer, more efficient (more compression) video compression
+technology.  It requires more signal processing power, but should
+yield equivalent video results to the current (older) MPEG2
+compression technology.
+--dbstalk.com/
+
+
+Links
+=====
+What is the dif? MPEG vs. MPEG4
+http://www.dbstalk.com/archive/index.php/t-64805.html
+
+MPEG-4
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Mpeg4
