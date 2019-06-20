@@ -1,0 +1,138 @@
+links.txt
+Created Tue Apr 24 14:35:17 AKDT 2012
+Copyright (C) 2012 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Transcoding related links
+
+
+Links
+=====
+9 Essential Free Linux Transcoders <== should mirror this.
+http://www.linuxlinks.com/portal/news/article.php?story=20120414115202780
+http://www.linuxlinks.com/article/20120413211230621/Transcoders.html
+
+Analyzing what's on a DVD disc
+Some info here...
+http://www.doom9.org/index.html?/mpg/analyzeDVDcontent.htm
+
+Atomic Parsley
+Set iTunes style metadata with alacrity...
+..or purge them with the metaEnema
+http://atomicparsley.sourceforge.net/
+
+Best possible Handbrake settings to rip DVDs? 720p?   <=== Good info to mirror here.
+http://forums.macrumors.com/showthread.php?t=1086363
+
+Choosing a Audio or Video Internet Distribution Format
+http://discerning.com/topics/audiovideo/video_encoding.html
+
+deb-multimedia.org/ home
+Had /etc/apt/sources.list info for HandBrake
+http://deb-multimedia.org/
+
+deb-multimedia.org/ amd64 packages
+http://deb-multimedia.org/dists/stable/main/binary-amd64/
+
+Distributions: Floppy
+Fine transcoding definition and link to 9 Essential Free Linux Transcoders
+http://www.linuxlinks.com/Distributions/Floppy/
+
+HandBrake is a multi-threaded DVD to MPEG-4 ripper and converter.
+It can encode directly from DVDs (even encrypted ones) or from VIDEO_TS
+folders.  AC3, LPCM, and MPEG audio tracks are supported.  The output
+can be contained in MP4, AVI, or OGM files, and the output audio is
+encoded in either AAC, MP3, or Vorbis.  Other features include support
+for 2-pass encoding, encoding of two audio tracks, a bitrate calculator,
+and deinterlacing, cropping, and scaling of the original picture.
+http://freecode.com/search?q=handbrake&submit=Search
+http://handbrake.fr/
+
+How to create a DVD-Video image under Linux with mkisofs
+Some details here.
+http://ubuntuforums.org/showthread.php?t=120186
+
+MKVToolNix
+Cross-platfrom tools for Matroska
+http://www.bunkus.org/videotools/mkvtoolnix/
+
+Ripping, Encoding, and Burning CD and DVD media in Debian Linux
+Spencer Stirling
+Darn good page
+http://www.spencerstirling.com/computergeek/cd_dvd.html
+
+The Wretched State of GPU Transcoding
+Posted by Soulskill on Tuesday May 08, @06:57PM
+from the things-that-should-work-better-in-2012 dept.
+"This story began as an investigation into why Cyberlink's Media Espresso
+software produced video files of wildly varying quality and size depending
+on which GPU was used for the task.  It then expanded into a comparison of
+several alternate solutions. Our goal was to find a program that would
+encode at a reasonably high quality level (~1GB per hour was the target)
+and require a minimal level of expertise from the user.  The conclusion,
+after weeks of work and going blind staring at enlarged images, is that
+the state of 'consumer' GPU transcoding is still a long, long way from
+prime time use.  In short, it's simply not worth using the GPU to
+accelerate your video transcodes; it's much better to simply use Handbrake,
+which uses your CPU."
+http://tech.slashdot.org/story/12/05/08/2217236/the-wretched-state-of-gpu-transcoding
+
+MP4 for Flash in Linux
+Flash version 9 can play mp4 streams.  This document describes how to
+transcode an arbitrary video file to an mp4 file suitable for streaming
+to a web browser.
+http://renomath.org/video/linux/flash/
+
+MPEG-4 contains two advanced video codecs that provides higher quality
+per kilobit than MPEG-2.  The trade off is additional CPU power is required
+to encode and decode the video.  H.264 is the most common variant of MPEG-4
+MythTV recordings. 
+http://www.mythtv.org/wiki/MPEG-4
+
+Ripping is the process of copying audio or video content to a hard disk,
+typically from removable media such as compact disc (CD) or DVD, although
+the word refers to all forms of media.  Despite the name, neither the media
+nor the data is damaged after extraction.  Ripping is often used to shift
+formats, and to edit, duplicate or back up media content.
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Ripping
+
+The Wretched State of GPU Transcoding
+Posted by Soulskill on Tuesday May 08, @06:57PM
+from the things-that-should-work-better-in-2012 dept.
+"This story began as an investigation into why Cyberlink's Media Espresso
+software produced video files of wildly varying quality and size depending
+on which GPU was used for the task.  It then expanded into a comparison of
+several alternate solutions. Our goal was to find a program that would
+encode at a reasonably high quality level (~1GB per hour was the target)
+and require a minimal level of expertise from the user.  The conclusion,
+after weeks of work and going blind staring at enlarged images, is that
+the state of 'consumer' GPU transcoding is still a long, long way from
+prime time use.  In short, it's simply not worth using the GPU to accelerate
+your video transcodes; it's much better to simply use Handbrake, which uses
+your CPU."
+http://tech.slashdot.org/story/12/05/08/2217236/the-wretched-state-of-gpu-transcoding
+
+The wretched state of GPU transcoding
+by Joel Hruska on May 8, 2012 at 1:19 pm
+http://www.extremetech.com/computing/128681-the-wretched-state-of-gpu-transcoding
+
+Top 5 Linux DVD RIP Software
+Please note that most of the following programs can rip encrypted DVDs,
+as long as you have libdvdcss2 installed as described here. 
+http://www.cyberciti.biz/tips/linux-dvd-ripper-software.html
+
+Video Conversion
+http://ubuntuguide.org/wiki/Video_Conversion#Recommended_formats
+
+What's on a DVD?
+What exactly is on a DVD disc? What are VOB, IFO and BUP files?
+All this will be explained here.
+http://www.doom9.org/index.html?/mpg/analyzeDVDcontent.htm
+
+What is Encoding and Transcoding?
+An overview of the basics of encoding and transcoding, including
+an attempt to settle on some hitherto controversial definitions
+By Jan Ozer
+Posted on April 20, 2011
+http://www.streamingmedia.com/Articles/Editorial/What-Is-.../What-is-Encoding-and-Transcoding-75025.aspx
