@@ -1,0 +1,41 @@
+glossary.txt
+Created Thu Jan 17 22:02:55 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Glossary for transcoding
+
+
+M4V - The M4V file format is a video file format developed by Apple and is
+  very close to the MP4 format.  The differences are the optional Apple's
+  DRM copy protection, and the treatment of AC3 (Dolby Digital) audio which
+  is not standardized for the MP4 container.
+  http://en.wikipedia.org/wiki/M4V
+
+Matroska - extensible, open source, open standard Multimedia container.
+  Matroska is usually found as .MKV files (matroska video), .MKA files
+  (matroska audio) and .MKS files (subtitles) and .MK3D files
+  (stereoscopic/3D video).  It is also the basis for .webm (WebM) files.
+  http://www.matroska.org/
+
+MKV - MKV is just a container format, it can hold video in any number of
+  formats audio etc, it has no menu structure though which is something
+  an ISO image of a disc can retain.
+
+  what MakeMKV does is take the original source and essentially "repackage"
+  the original video and audio in a new container.  No menus or anything but
+  it maintains the original quality (no re-encoding involved).  If the
+  original was a DVD you'll end up with a 4-8 gb standard def file, if it
+  was a blu-ray you end up with a 12-40 gb HD file. PLEX VIDEO_TS OR .VOB
+  FILE WORK AROUND THIS WILL ALLOW PLEX TO STREAM YOUR VIDEO_TS OR .VOB FILES 
+  http://forums.plexapp.com/index.php/topic/40882-plex-video-ts-or-vob-file-work-around/
+
+MPEG - Moving Picture Experts Group
+  http://en.wikipedia.org/wiki/Moving_Picture_Experts_Group
+
+rip - Ripping is the process of copying audio or video content to a hard disk,
+  typically from removable media such as compact disc (CD) or DVD, although
+  the word refers to all forms of media.  Despite the name, neither the media
+  nor the data is damaged after extraction.  Ripping is often used to shift
+  formats, and to edit, duplicate or back up media content.
+  http://en.wikipedia.org/wiki/Ripping
