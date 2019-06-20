@@ -1,0 +1,57 @@
+update-title.txt
+Created Sat Apr 16 21:49:01 AKDT 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+When I transcoded the Music and Lyrics blu-ray the resultant movied title,
+displayed in Plex media was "title00":
+
+$ ffprobe Music\ and\ Lyrics.m4v 
+ffprobe version 2.6.8 Copyright (c) 2007-2016 the FFmpeg developers
+  built with gcc 4.9.2 (Debian 4.9.2-10)
+...
+    title           : title00
+...
+    Metadata:
+      handler_name    : Stereo
+    Stream #0:2(eng): Subtitle: mov_text (text / 0x74786574)
+    Metadata:
+      handler_name    : SubtitleHandler
+$
+
+
+NOTE: ffprobe is not in:
+        libav-tools - Multimedia player, encoder and transcoder        
+
+
+The quick fix was use of mp4tags in the mp4v2-utils package:
+  mp4v2-utils - end-to-end system to explore streaming multimedia
+
+
+# aptitude install mp4v2-utils
+$ mp4tags -s "Music and Lyrics" Music\ and\ Lyrics.m4v 
+
+
+$ ffprobe Music\ and\ Lyrics.m4v 
+ffprobe version 2.6.8 Copyright (c) 2007-2016 the FFmpeg developers
+  built with gcc 4.9.2 (Debian 4.9.2-10)
+...
+    title           : Music and Lyrics
+...
+    Metadata:
+      handler_name    : Stereo
+    Stream #0:2(eng): Subtitle: mov_text (text / 0x74786574)
+    Metadata:
+      handler_name    : SubtitleHandler
+$
+
+
+The mp4tags did the trick.
+
+
+
+Links
+=====
+Tag and manage video files
+mp4tags -a "Author Name" -s "The Video Title" -g "The Genre" -A "The Album" "file.mp4"
+http://askubuntu.com/questions/29513/tag-and-manage-video-files
