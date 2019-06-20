@@ -22,7 +22,7 @@
 ssh://git@github.com/marcilr/commercial-removal             commercial-removal
 ssh://git@github.com/marcilr/dvdrip                         dvdrip
 ssh://git@github.com/marcilr/ffmpeg                         ffmpeg
-#ssh://htpc/data/git/media/transcoding/ffprobe              ffprobe
+ssh://git@github.com/marcilr/ffprobe                        ffprobe
 #ssh://htpc/data/git/media/transcoding/handbrake            handbrake
 #ssh://htpc/data/git/media/transcoding/handbrakecli         handbrakecli
 #ssh://htpc/data/git/media/transcoding/libdvdcss2           libdvdcss2
