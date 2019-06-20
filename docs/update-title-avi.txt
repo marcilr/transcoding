@@ -1,0 +1,88 @@
+update-title-avi.txt
+Created Sat Sep 16 10:30:28 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Updated title avi
+
+
+You can do this with FFmpeg like so:
+    ffmpeg -i input.avi -metadata key=value -codec copy output.avi
+
+Example:
+    $ du -h test.mov 
+     27M    test.mov
+    $ ffprobe -loglevel quiet -show_format out.mov | grep title    # nothing found
+    $ ffmpeg -loglevel quiet -i test.mov -codec copy -metadata title="My title" out.mov
+    $ du -h out.mov
+     27M    out.mov
+    $ ffprobe -loglevel quiet -show_format out.mov | grep title
+
+    TAG:title=My title
+    See the documentation for -metadata and on stream copying for more information.
+
+    Note also that not all formats allow setting arbitrary metadata, for,
+    e.g., Quicktime doing -metadata title="my title" does what you'd expect,
+    but -metadata foo=bux does nothing.
+
+    shareimprove this answer
+
+    answered Jul 13 '12 at 22:15
+    blahdiblah
+    23k1577132
+
+...
+
+"No, it's not possible [to change the metadata without creating a new file], neither
+libavformat API nor avconv design allows for in-place editing of files."
+
+  answered Jul 15 '12 at 13:50
+  Stephan Kulla
+  2,38711128
+
+
+Example
+=======
+To update the title of 4-of-6-Ocean-of-Volcanoes.avi from plex detected "Godzilla 1985"
+to "Ocean of Volcanoes 4/6" using ffmpeg:
+
+$ ffmpeg -i 4-of-6-Ocean-of-Volcanoes.avi -codec copy -metadata title="Ocean of Volcanoes 4/6" out.avi 
+ffmpeg version 2.6.9 Copyright (c) 2000-2016 the FFmpeg developers
+  built with gcc 4.9.2 (Debian 4.9.2-10)
+  configuration: --prefix=/usr --extra-cflags='-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' --extra-ldflags='-Wl,-z,relro' --cc='ccache cc' --enable-shared --enable-libmp3lame --enable-gpl --enable-nonfree --enable-libvorbis --enable-pthreads --enable-libfaac --enable-libxvid --enable-postproc --enable-x11grab --enable-libgsm --enable-libtheora --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libx264 --enable-libspeex --enable-nonfree --disable-stripping --enable-libvpx --enable-libschroedinger --disable-encoder=libschroedinger --enable-version3 --enable-libopenjpeg --enable-librtmp --enable-avfilter --enable-libfreetype --enable-libvo-aacenc --disable-decoder=amrnb --enable-libvo-amrwbenc --enable-libaacplus --libdir=/usr/lib/x86_64-linux-gnu --disable-vda --enable-libbluray --enable-libcdio --enable-gnutls --enable-frei0r --enable-openssl --enable-libass --enable-libopus --enable-fontconfig --enable-libpulse --disable-mips32r2 --disable-mipsdspr1 --disable-mipsdspr2 --enable-libvidstab --enable-libzvbi --enable-avresample --disable-htmlibdc1394 --disable-altivec --shlibdir=/usr/lib/x86_64-linux-gnuc --enable-libx265 --enable-libiec61883 --enable-vaapi --enable-libdc1394 --disable-altivec --shlibdir=/usr/lib/x86_64-linux-gnu
+  libavutil      54. 20.100 / 54. 20.100
+  libavcodec     56. 26.100 / 56. 26.100
+  libavformat    56. 25.101 / 56. 25.101
+  libavdevice    56.  4.100 / 56.  4.100
+  libavfilter     5. 11.102 /  5. 11.102
+  libavresample   2.  1.  0 /  2.  1.  0
+  libswscale      3.  1.101 /  3.  1.101
+  libswresample   1.  1.100 /  1.  1.100
+  libpostproc    53.  3.100 / 53.  3.100
+Input #0, avi, from '4-of-6-Ocean-of-Volcanoes.avi':
+  Metadata:
+    encoder         : VirtualDubMod 1.5.4.1 (build 2178/release)
+  Duration: 00:58:57.60, start: 0.000000, bitrate: 1768 kb/s
+    Stream #0:0: Video: mpeg4 (Advanced Simple Profile) (XVID / 0x44495658), yuv420p, 704x400 [SAR 1:1 DAR 44:25], 1568 kb/s, 29.97 fps, 29.97 tbr, 29.97 tbn, 29.98 tbc
+    Stream #0:1: Audio: ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, fltp, 192 kb/s
+Output #0, avi, to 'out.avi':
+  Metadata:
+    INAM            : Ocean of Volcanoes 4/6
+    ISFT            : Lavf56.25.101
+    Stream #0:0: Video: mpeg4 (XVID / 0x44495658), yuv420p, 704x400 [SAR 1:1 DAR 44:25], q=2-31, 1568 kb/s, 29.97 fps, 29.97 tbr, 29.97 tbn, 29.97 tbc
+    Stream #0:1: Audio: ac3 ([0] [0][0] / 0x2000), 48000 Hz, stereo, 192 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame=106022 fps=37897 q=-1.0 Lsize=  765507kB time=00:58:57.60 bitrate=1772.7kbits/s    
+video:677480kB audio:82889kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.675573%
+$
+
+
+Links
+=====
+How to change metadata with ffmpeg/avconv without creating a new file?
+You can do this with FFmpeg like so:
+  ffmpeg -i input.avi -metadata key=value -codec copy output.avi
+https://stackoverflow.com/questions/11474532/how-to-change-metadata-with-ffmpeg-avconv-without-creating-a-new-file
