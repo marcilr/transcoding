@@ -1,0 +1,79 @@
+atomic-parsley.txt
+Created Sat Sep 16 09:40:36 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Atomic Parsley
+
+
+Set iTunes style metadata with alacrity...
+..or purge them with the metaEnema
+
+
+	
+AtomicParsley is a lightweight command line program for reading, parsing and setting metadata
+into MPEG-4 files supporting these styles of metadata:
+
+o iTunes-style metadata into .mp4, .m4a, .m4p, .m4v, .m4b files
+o 3gp-style assets (3GPP TS 26.444 version 6.4.0 Release 6 specification conforming)
+  in 3GPP, 3GPP2, MobileMP4 & derivatives
+o ISO copyright notices at movie & track level for MPEG-4 & derivative files
+o uuid private user extension text & file embedding for MPEG-4 & derivative files
+
+The MPEG-4 container is based on Apple's Quicktime .mov container (just more sane) & there
+are a number of similarites - as well as differences.  Each MPEG-4 file lists a "major file
+brand" that broadly says which specification the file adheres to.  For example, an iTunes
+audio file typically lists 'M4A ' as its major file brand, while a 3GPP2 .3g2 file has
+something like '3g2a'.  It is based on this major file brand that AtomicParsley allows a
+style of metadata to be set.  Since there is nothing in the 3GPP2 specification regarding
+iTunes-style metadata, its use is prevented on such files.  Similarly, a 3gp 'location' asset
+is not available for an iTMS video file.  The first paragraph here[1] sums the situation up
+well.
+
+With the exception of artwork, all iTunes-style tags support only 1 piece of metadata - you
+can't have for example 3 title tags. 3gp assets and copyright notices support multiple tags,
+but they must differ in the language setting for that tag.  You can have for example 3 title
+tags, but 1 in english, 1 in spanish, 1 in undefined.  All iTunes-style text metadata is
+always in UTF-8; 3gp assets & copyright notices can be in set in UTF-8 or UTF-16.  All
+strings are converted internally to UTF-8, converting as necessary.  On *nix platforms,
+input is in UTF-8; the native Windows port supports full UTF-16 input.
+--atomicparsley.sourceforge.net/
+
+
+
+
+Installation
+============
+Install the atomicparsley package:
+
+
+atomicparsley - read, parse and set metadata of MPEG-4 and 3gp files
+
+
+Install on htpc (September 16, 2017)
+------------------------------------
+htpc:~# aptitude install atomicparsley
+The following NEW packages will be installed:
+  atomicparsley 
+0 packages upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 118 kB of archives. After unpacking 303 kB will be used.
+Get: 1 http://ftp.us.debian.org/debian/ jessie/main atomicparsley amd64 0.9.2~svn110-4 [118 kB]
+Fetched 118 kB in 1s (97.5 kB/s)        
+Selecting previously unselected package atomicparsley.
+(Reading database ... 153783 files and directories currently installed.)
+Preparing to unpack .../atomicparsley_0.9.2~svn110-4_amd64.deb ...
+Unpacking atomicparsley (0.9.2~svn110-4) ...
+Setting up atomicparsley (0.9.2~svn110-4) ...
+                                         
+htpc:~#
+
+Was already installed on malachite (September 16, 2017)
+
+
+
+Links
+=====
+Atomic Parsley
+Set iTunes style metadata with alacrity...
+..or purge them with the metaEnema
+http://atomicparsley.sourceforge.net/
