@@ -5,6 +5,9 @@ Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+.gitignore
+  Specifies intentionally untracked files to ignore
+
 00ARCHIVES/
   Archives
 
