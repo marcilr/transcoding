@@ -1,0 +1,28 @@
+mp4-vs-m4v.txt
+Created Sat Feb 14 12:18:32 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+mp4 vs. m4v
+
+
+They are the exact same file, the only difference is the extension. MP4 vs M4v.
+
+For MP4 files, HandBrake will automatically use the extension M4V when you pass-through audio
+(AC3), use SRT subtitles or have chapter markers enabled.
+
+You can simply change the file extension between .mp4 and .m4v as the file is exactly the
+same.  There are no differences in the content or container itself.
+
+You can disable the option to automatically set this in HandBrakes preferences.
+
+Note: QuickTime or any QT based application will not be able to play a MP4 file with these
+      features enabled, unless it has the extension ".m4v"
+
+
+
+Links
+=====
+Containers
+Has mp4 vs. m4v section
+https://trac.handbrake.fr/wiki/Containers
