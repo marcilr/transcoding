@@ -1,0 +1,19 @@
+transcoding.txt
+Created Tue Apr 24 14:33:54 AKDT 2012
+Copyright (C) 2012 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Transcoding is the process of the conversion of digital data (typically
+video and audio files) from one format to another.  It involves extracting
+tracks from a digital media file, decoding the tracks, filtering, encoding,
+and then multiplexing the new tracks into a new container.  Transcoding
+will reduce the quality of the tracks unless lossless formats are used.
+
+linuxlinks.com/
+
+
+Links
+=====
+9 Essential Free Linux Transcoders
+Distributions : Floppy
+http://www.linuxlinks.com/Distributions/Floppy/
