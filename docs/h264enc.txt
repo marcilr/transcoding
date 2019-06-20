@@ -1,0 +1,306 @@
+h264enc.txt
+Created Mon Feb 25 20:56:07 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+h264enc is a rather advanced shell script which can help you to encode video files or DVDs to the
+H.264 video format.  It has built-in quality presets (34 so far), supports a lot of video
+(pre/postprocessing) filters and a few audio filters as well.  Further it supports 9 different
+audio codecs and has a (limited) batch encoding capability.  Muxing is also supported for the MKV,
+MP4 and OGM containers.  h264enc by default outputs to AVI and then remuxes it to the chosen
+container.  h264enc heavely relies on MEncoder and MPlayer as it uses both to do the whole
+setup/encoding
+
+at http://h264enc.sourceforge.net is a FAQ about h264enc, so if anyone is interested, just go put
+up some coffee and read it through
+
+doom9.org/
+
+
+package:
+  h264enc - script to encode video or DVD in H.264/AVC/MPEG-4 Part 10
+
+Description: script to encode video or DVD in H.264/AVC/MPEG-4 Part 10
+ A shell script which makes it easy to encode DVDs or video files to the
+ H.264/AVC/MPEG-4 Part 10 video format using MEncoder from the MPlayer
+ project.
+
+debian.net/
+
+
+Usage
+=====
+$ h264enc -2p -p vhq
++=============================================================+
+|<<<<<<< h264enc - the interactive shell script ripper >>>>>>>|
+|-------------------------------------------------------------|
+|<<<<<< version: 9.3.2 - (C) 2006-2011, Grozdan Nikolov >>>>>>|
++=============================================================+
+
+
+Select the Input type [file/dir/dvd/vcd]: dvd
+
+Input Selection
+~~~~~~~~~~~~~~~
+0 -> Encode from a DVD disc/drive
+1 -> Encode from a DVD ISO image
+2 -> Encode from a DVD VIDEO_TS directory
+
+Select the input [default is 0]: 2
+Provide the DVD VIDEO_TS directory: /media/cdrom1/VIDEO_TS/
+
+-> Unlocking the DVD disc...
+-> Scanning for DVD title name...
+
+Provide a name for the Output File [default is unknown]: The-L-Word-Season3-Disc2.m4v
+/usr/bin/h264enc: line 3227: [: 64%: integer expression expected
+
+-> Scanning for DVD titles...
+
+Disc Title: unknown
+Title: 01 - Length: 00:52:38 - Chapters: 07
+Title: 02 - Length: 00:50:50 - Chapters: 07
+Title: 03 - Length: 00:53:58 - Chapters: 07
+Title: 04 - Length: 00:58:33 - Chapters: 07
+Title: 05 - Length: 00:00:11 - Chapters: 01
+
+-> Titles On Disc: 5
+-> Longest Title:  4 - Title Length: 00:58:33
+
+Specify the DVD title for encoding [default/longest is 4]: <enter>
+Would you like to encode from a different DVD angle? [y/N]: <enter>
+Would you like to encode only Specific Chapters? [y/N]: <enter>
+Export DVD chapters information to a file on disk? [y/N]: y
+Would you like to use Pre/Postprocessing video filters? [y/N]: <enter>
+Would you like to Crop the DVD? [y/N]: <enter>
+Would you like to include/rip a Subtitle? [y/N]: <enter>
+
+-> Detecting NTSC type and FPS value
+-> Scanning can take a while...
+
+-> Detecting NTSC type and FPS value
+-> Scanning can take a while...
+-> Detected 0 'demux_mpg' frame rate switchings
+-> DVD appears to be Progressive or Hard Telecined (may need IVTC!)
+-> Number of frames: 105294
+
+Would you like to set/force the Output Frame Rate (FPS)? [y/N]: <enter>
+Would you like to do Frame Rate Conversion? [y/N]: <enter>
+Apply a Telecine/3:2 Pulldown/IVTC/Pullup process? [y/N]: <enter>
+
+-> Detecting original resolution...
+-> Original resolution: 720x480
+
+-> Detected Aspect Ratio (AR): 1.7778:1
+-> Storage Aspect Ratio (SAR): 1.5000:1
+-> Pixel Aspect Ratio (PAR): 1.1852:1
+-> Total pixels: 345600
+
+Specify the desired Resolution [default is 720x480]: <enter>
+Specify the Expand filter parameters [press 'Enter' to skip]: <enter>
+Would you like to set/force the input Video Aspect Ratio? [y/N]: <enter>
+
++=============================+
+| H.264 Encoder Configuration |
++=============================+
+
+Specify the desired Video Bitrate in kbps [default is 1000]: <enter>
+
+-> Bits Per Pixel value: 0.096 bpp
+-> Bits Per Block value: 24.716 bpb
+-> Using "Very High Quality" preset
+
+Specify the H.264 Level [default is auto]: <enter>
+Would you like to use Predefined/Custom Quantization Matrices (cqm)? [y/N]: <enter>
+
++=====================+
+| Audio Configuration |
++=====================+
+
+-> Scanning for audio streams...
+
+Audio stream: 0 Format: AC3 (stereo) Language: en ID: 128.
+Audio stream: 1 Format: AC3 (5.1) Language: en ID: 129.
+Audio stream: 2 Format: AC3 (stereo) Language: es ID: 130.
+
+Track 1: Specify the DVD Audio Stream ID [default is 128]: 128
+Track 2: Specify the DVD Audio Stream ID [press 'Enter' to skip]: <enter>
+Track 3: Specify the DVD Audio Stream ID [press 'Enter' to skip]: <enter>
+
+Available Audio Codecs
+~~~~~~~~~~~~~~~~~~~~~~
+MP3 -----> Container support: AVI, MKV, MP4, OGM, TS
+AC3 -----> Container support: AVI, MKV, MP4, OGM, TS
+AAC -----> Container support: MKV, MP4, TS
+AAC+ ----> Container support: MP4, MKV
+neroAAC -> Container support: MP4, MKV
+VORBIS --> Container support: MP4, MKV, OGM
+FLAC ----> Container support: MKV
+PCM -----> Container support: AVI, MKV, OGM
+COPY ----> Container support: Depends on audio codec
+NOSOUND -> Container support: AVI, MKV, MP4, OGM, TS
+
+Track 1: Select the Audio Codec [default is AAC]: AC3
+
+Track 1: AC3 Audio Bitrates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0 -> 32 kbps    9 --> 160 kbps
+1 -> 40 kbps    10 -> 192 kbps
+2 -> 48 kbps    11 -> 224 kbps
+3 -> 56 kbps    12 -> 256 kbps
+4 -> 64 kbps    13 -> 320 kbps
+5 -> 80 kbps    14 -> 448 kbps
+6 -> 96 kbps    15 -> 512 kbps
+7 -> 112 kbps   16 -> 576 kbps
+8 -> 128 kbps   17 -> 640 kbps
+
+Track 1: Select the AC3 Audio Bitrate [default is 10] <enter>
+Track 1: Would you like to decode/output more than 2 Audio Channels? [y/N]: <enter>
+Track 1: Would you like to use Audio filters? [y/N]: <enter>
+
++=============================+
+| Miscellaneous Configuration |
++=============================+
+
+Would you like to set a target file size? [y/N]: <enter>
+Would you like to inspect the MEncoder options? [y/N]: <enter>
+Would you like to encode a Sample? [y/N]: <enter>
+Would you like to save the MEncoder options to a file? [y/N]: y
+Where to store the options? [default is /home/marcilr/batchfile]: y
+
+-> You have to provide the full path!
+-> Using default file: /home/marcilr/batchfile
+
+Would you like to convert the final encode from AVI to MKV? [y/N]: y
+Specify the Release Year of the content [press 'Enter' to skip]: 2006
+Specify a Genre for the content [press 'Enter' to skip]: <enter>
+Provide a Cover file in jpeg/png format [press 'Enter' to skip]: The-L-Word-Season3-Disc2.jpg
+Would you like to convert the final encode from AVI to MP4? [y/N]: y
+Specify the Release Year of the content [press 'Enter' to skip]: 2006
+Specify a Genre for the content [press 'Enter' to skip]: <enter>
+Provide a Cover file in jpeg/png format [press 'Enter' to skip]: The-L-Word-Season3-Disc2.jpg
+Hint the MP4 file for RTP/RTSP streaming sessions? [y/N]: <enter>
+Would you like to convert the final encode from AVI to TS? [y/N]: <enter>
+Would you like to convert the final encode from AVI to OGM? [y/N]: <enter>
+
+-> Starting to encode the DVD in 2-pass mode
+-> Using "Very High Quality" preset
+-> Using '/dev/null' as output for the first pass
+-> Using '/home/marcilr/The-L-Word-Season3-Disc2.avi' as output file for the second pass
+
+Starting to encode in: 5 4...
+
+1 duplicate frame(s)!
+Pos:   0.0s     22f ( 0%)  0.00fps Trem:   0min   0mb  A-V:0.068 [0:0]
+
+Skipping frame!
+Pos:   0.0s     23f ( 0%)  0.00fps Trem:   0min   0mb  A-V:0.037 [0:0]
+...
+Mon Feb 25 21:48:52 AKST 2013
+...
+Skipping frame!
+Pos:3511.0s 210473f (99%) 88.50fps Trem:   0min 500mb  A-V:0.029 [1000:192]
+
+Flushing video frames.
+Writing index...
+Writing header...
+ODML: vprp aspect is 16384:9208.
+Setting audio delay to 0.064s.
+
+Video stream: 1000.054 kbit/s  (125006 B/s)  size: 438941501 bytes  3511.341 secs  210473 frames
+
+Audio stream:  192.000 kbit/s  (24000 B/s)  size: 84276480 bytes  3511.520 secs
+x264 [info]: frame I:740   Avg QP:19.80  size: 26184  PSNR Mean Y:45.71 U:48.84 V:49.84 Avg:46.42 Gl            obal:45.92
+x264 [info]: frame P:24840 Avg QP:23.34  size:  9316  PSNR Mean Y:43.08 U:45.43 V:46.60 Avg:43.62 Gl            obal:43.11
+x264 [info]: frame B:79655 Avg QP:25.49  size:  2362  PSNR Mean Y:42.13 U:44.74 V:46.01 Avg:42.74 Gl            obal:42.16
+x264 [info]: consecutive B-frames:  1.3%  4.3% 12.3% 20.7% 41.4% 20.0%
+x264 [info]: mb I  I16..4: 21.9% 70.7%  7.5%
+x264 [info]: mb P  I16..4:  2.9%  5.9%  0.9%  P16..4: 56.1% 14.3% 10.6%  0.0%  0.0%    skip: 9.3%
+x264 [info]: mb B  I16..4:  0.2%  0.6%  0.1%  B16..8: 34.5%  3.1%  0.7%  direct: 2.4%  skip:58.3%  L            0:42.0% L1:53.4% BI: 4.7%
+x264 [info]: 8x8 transform intra:63.0% inter:76.2%
+x264 [info]: direct mvs  spatial:92.8% temporal:7.2%
+x264 [info]: coded y,uvDC,uvAC intra: 62.4% 76.0% 45.2% inter: 14.7% 24.6% 9.7%
+x264 [info]: i16 v,h,dc,p: 39% 30%  9% 23%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 14% 24%  4%  6%  8%  5%  7%  6%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 51% 10%  3%  5%  5%  4%  4%  3%
+x264 [info]: i8c dc,h,v,p: 47% 19% 27%  7%
+x264 [info]: Weighted P-Frames: Y:3.0% UV:1.5%
+x264 [info]: ref P L0: 55.1% 11.8% 23.9%  8.0%  1.3%  0.0%
+x264 [info]: ref B L0: 81.6% 13.4%  5.0%
+x264 [info]: ref B L1: 90.9%  9.1%
+x264 [info]: SSIM Mean Y:0.9718900 (15.511db)
+x264 [info]: PSNR Mean Y:42.376 U:44.934 V:46.175 Avg:42.972 Global:42.389 kb/s:1000.05
+
+-> Converting AVI file to the MKV container, please wait...
+-> Done
+
+-> Converting AVI file to the MP4 container, please wait...
+-> Done
+
+-> AVI file size: 503.953 MiB (/home/marcilr/The-L-Word-Season3-Disc2.avi)
+-> MKV file size: 499.884 MiB (/home/marcilr/The-L-Word-Season3-Disc2.mkv)
+-> MP4 file size: 500.198 MiB (/home/marcilr/The-L-Word-Season3-Disc2.mp4)
+
+Delete the AVI file? [y/N]: <enter>
+
+-> Have a nice day ^_^
+
+$
+
+Move ripped videos to bornite's /data/movies
+$ rsync -va --stats --progress ~/The-L-Word-Season3-Disc2.* ~/Videos
+sending incremental file list
+The-L-Word-Season3-Disc2.avi
+   528433934 100%   55.52MB/s    0:00:09 (xfer#1, to-check=3/4)
+The-L-Word-Season3-Disc2.chaps
+         336 100%    4.43kB/s    0:00:00 (xfer#2, to-check=2/4)
+The-L-Word-Season3-Disc2.mkv
+   524166964 100%   46.41MB/s    0:00:10 (xfer#3, to-check=1/4)
+The-L-Word-Season3-Disc2.mp4
+   524496076 100%   48.30MB/s    0:00:10 (xfer#4, to-check=0/4)
+...
+Number of files: 4
+Number of files transferred: 4
+Total file size: 1577097310 bytes
+Total transferred file size: 1577097310 bytes
+Literal data: 1577097310 bytes
+Matched data: 0 bytes
+File list size: 101
+File list generation time: 0.001 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 1577290104
+Total bytes received: 88
+$
+
+$ du -m The-L-Word-Season3-Disc2.mp4
+501     The-L-Word-Season3-Disc2.mp4   <== Small
+$
+
+Argh on inspection this still only got 1 episode.
+
+Links
+=====
+A case for text-based DVD rippers
+By Rui Lopes on July 08, 2008 (4:00:00 PM)
+Goog h264enc and xvidenc usage info.
+http://archive09.linux.com/feature/140081
+
+Good DVD ripper
+Debian User Forums
+Solid h264enc info
+http://forums.debian.net/viewtopic.php?f=3&t=58904&start=15
+
+h264enc FAQ/Doc
+http://h264enc.sourceforge.net/faq.html
+
+h264enc for Linux
+Some great text/description here.
+http://forum.doom9.org/showthread.php?p=1541743
+http://forum.doom9.org/showthread.php?t=134652
+
+h264enc-5.6-fc RPM for noarch
+http://rpmfind.net/linux/RPM/sourceforge/h/h2/h264enc/Fedora%20RPM%20-%20Outdated%20!!!/h264enc-5.6/h264enc-5.6-fc.noarch.html
+
+Handbrake How do I rip the whole DVD? Notifier quit announcing DVD/mounting DVD.
+How do I go about ripping the whole DVD? All Handbrake does is rip the first episode?
+http://forums.opensuse.org/english/get-technical-help-here/multimedia/463864-handbrake-how-do-i-rip-whole-dvd-notifier-quit-announcing-dvd-mounting-dvd.html
