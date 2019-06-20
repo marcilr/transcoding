@@ -1,0 +1,40 @@
+video-formats.txt
+Created Sun Feb 15 11:26:20 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Video formats
+
+
+Youtube and Vimeo Upload
+
+Name        Size                            Aspect
+--------------------------------------------------
+SD 4:3      640:480                            4:3
+HD 16:9     1280x720                          16:9
+Full HD     1920x1080 (1920x1072 base 16)     16:9
+
+
+HD, Blu-Ray, AVCHD
+
+Name                 Size                   Aspect
+--------------------------------------------------
+720p                 1280x720                 16:9
+1080p/i Anamorphic   1440x1080                16:9
+1080p/i              1920x1080                16:9
+
+NOTE: 720p or 1080p maps to the 2nd value.
+      i.e. 1920x1080 it 1080p
+
+rodrigopolo.com/ffmpeg/cheats.php
+
+
+Links
+=====
+FFmpeg Cheat Sheet
+A little FFmpeg 0.5 guide made by RodrigoPolo.com
+This is a small personal cheat sheet for audio/video encoding
+where I put some of my most used stuff with FFmpeg 0.5 and other tools. I use H.264 and AAC on
+MP4, M4V or MKV container most of the time.
+http://rodrigopolo.com/ffmpeg/cheats.php
+
