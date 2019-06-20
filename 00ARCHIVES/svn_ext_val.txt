@@ -1,0 +1,78 @@
+#
+# svn_ext_val.txt
+# Created Tue Jan 15 18:56:17 AKST 2013
+# by Raymond E. Marcil <marcilr@gmail.com>
+#
+
+
+#
+# List of repo hierarchical directories to checkout under transcoding/
+#
+# commercial-removal/   Commercial removal
+# docs/                 Documentation
+#
+# dvdrip/               dvd::rip is a full featured DVD copy program written
+#                       in Perl.  It provides an easy to use but feature-rich
+#                       Gtk+ GUI to control almost all aspects of the ripping
+#                       and transcoding process.  It uses the widely known
+#                       video processing swissknife transcode and many other
+#                       Open Source tools.  dvd::rip itself is licensed under
+#                       GPL / Perl Artistic License.
+#                       "And note: it's spelt dvd::rip, and nothing else."
+#                       http://www.exit1.org/dvdrip/
+#
+# ffmpeg/               Cross-platform solution to record, convert and stream
+#                       audio and video.  It includes libavcodec - the leading
+#                       audio/video codec library.
+#                       http://www.ffmpeg.org/
+#
+# ffprobe/              ffprobe media prober
+#                       Very useful for getting video file specs
+#
+# handbrake/            HandBrake is a general-purpose, open-source,
+#                       cross-platform, multithreaded video transcoder software
+#                       application.
+#                       http://en.wikipedia.org/wiki/HandBrake
+#
+# handbrakecli/         Very convenient cli utility for ripping and
+#                       transcoding videos.
+#                       Using HandBrakeCLI
+#                       https://trac.handbrake.fr/wiki/CLIGuide
+#
+# lib/                  Libraries
+#
+# makemkv/              MakeMKV is your one-click solution to convert video
+#                       that you own into free and patents-unencumbered format
+#                       that can be played everywhere.  MakeMKV is a format
+#                       converter, otherwise called "transcoder".  It converts
+#                       the video clips from proprietary (and usually
+#                       encrypted) disc into a set of MKV files, preserving
+#                       most information but not changing it in any way.
+#                       (No debian package)
+#                       http://www.makemkv.com/
+#
+# nero/                 The multimedia all-rounder for burning, converting,
+#                       and editing!
+#                       o Burn photos, music, videos and data onto CD,DVD and
+#                         now Blu-ray Disc
+#                       o Drag and drop files to copy iTunes playlists
+#                       o Burn & Copy discs like a pro
+#                       o Rip MP3 files for sharing and storing
+#                       http://www.nero.com/
+#
+# vobcopy/              Copy (rip) files from a dvd to the harddisk
+#                       Primarily needs libdvdread but also used libdvdcss
+#                       (if available) for encrypted dvds.  libdvdcss is an
+#                       optional dependency for encrypted dvd support.
+#
+../../transcoding/commercial-removal/commercial-removal   ./commercial-removal
+../../transcoding/docs/docs                               ./docs
+../../transcoding/dvdrip/dvdrip                           ./dvdrip
+../../transcoding/ffmpeg/ffmpeg                           ./ffmpeg
+../../transcoding/ffprobe/ffprobe                         ./ffprobe
+../../transcoding/handbrake/handbrake                     ./handbrake
+../../transcoding/handbrakecli/handbrakecli               ./handbrakecli
+../../transcoding/lib/lib                                 ./lib
+../../transcoding/makemkv/makemkv                         ./makemkv
+../../transcoding/nero/nero                               ./nero
+../../transcoding/vobcopy/vobcopy                         ./vobcopy
