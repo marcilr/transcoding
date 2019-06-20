@@ -20,7 +20,7 @@
 #
 # =====================================================================
 ssh://git@github.com/marcilr/commercial-removal             commercial-removal
-#ssh://htpc/data/git/media/transcoding/dvdrip               dvdrip
+ssh://git@github.com/marcilr/dvdrip                         dvdrip
 #ssh://htpc/data/git/media/transcoding/ffmpeg               ffmpeg
 #ssh://htpc/data/git/media/transcoding/ffprobe              ffprobe
 #ssh://htpc/data/git/media/transcoding/handbrake            handbrake
