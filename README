@@ -1,0 +1,92 @@
+README
+Created Fri Dec 16 22:14:30 AKST 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+00ARCHIVES/
+  Archives
+
+commercial-removal/
+  Commercial removal
+
+docs/
+  Documentation
+
+dvdrip/
+  dvd::rip is a full featured DVD copy program written in Perl.  It provides an
+  easy to use but feature-rich Gtk+ GUI to control almost all aspects of the
+  ripping and transcoding process.  It uses the widely known video processing
+  swissknife transcode and many other Open Source tools.  dvd::rip itself is
+  licensed under GPL / Perl Artistic License.
+
+  "And note: it's spelt dvd::rip, and nothing else."
+  http://www.exit1.org/dvdrip/
+
+ffmpeg/
+  Cross-platform solution to record, convert and stream
+  audio and video.  It includes libavcodec - the leading
+  audio/video codec library.
+  http://www.ffmpeg.org/
+
+ffprobe/
+  ffprobe media prober
+  Very useful for getting video file specs
+
+glossary.txt
+  Glossary for transcoding
+
+handbrake/
+  HandBrake is a general-purpose, open-source, cross-platform,
+  multithreaded video transcoder software application.
+  http://en.wikipedia.org/wiki/HandBrake
+
+handbrakecli/
+  Very convenient cli utility for ripping and transcoding videos.
+  Using HandBrakeCLI
+  https://trac.handbrake.fr/wiki/CLIGuide
+
+libdvdcss2/
+  libdvdcss2 is a highly portable library for accessing and unscrambling
+  DVDs encrypted with the CSS system.  It is part of the VideoLAN project
+  and is used by VLC and all other open source DVD players such as Ogle,
+  xine-based players and MPlayer.
+  http://deb-multimedia.org/dists/stable/main/binary-amd64/package/libdvdcss2
+  http://en.wikipedia.org/wiki/Libdvdcss
+
+links.txt
+  Transcoding related links
+
+makemkv/
+  MakeMKV is your one-click solution to convert video that you own into free
+  and patents-unencumbered format that can be played everywhere.  MakeMKV is
+  a format converter, otherwise called "transcoder".  It converts the video
+  clips from proprietary (and usually encrypted) disc into a set of MKV files,
+  preserving most information but not changing it in any way.
+  (No debian package)
+  http://www.makemkv.com/
+
+nero/
+  The multimedia all-rounder for burning, converting, and editing!
+  o Burn photos, music, videos and data onto CD,DVD and now Blu-ray Disc
+  o Drag and drop files to copy iTunes playlists
+  o Burn & Copy discs like a pro
+  o Rip MP3 files for sharing and storing
+  http://www.nero.com/
+
+packages.txt
+  Packages for transcoding
+
+transcoding.txt
+  Transcoding is the process of the conversion of digital data (typically
+  video and audio files) from one format to another.  It involves extracting
+  tracks from a digital media file, decoding the tracks, filtering, encoding,
+  and then multiplexing the new tracks into a new container.  Transcoding will
+  reduce the quality of the tracks unless lossless formats are used.
+
+vobcopy/
+  Copy (rip) files from a dvd to the harddisk
+  Primarily needs libdvdread but also used libdvdcss
+  (if available) for encrypted dvds.  libdvdcss is an
+  optional dependency for encrypted dvd support.
