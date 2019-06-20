@@ -1,0 +1,51 @@
+copy-vs-encode.txt
+Created Sun Feb 15 11:21:34 AKST 2015
+Copyright (C) 2015 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Copy vs. Encode
+
+
+When to copy, when to encode?
+=============================
+You might not have thought about this before, but sometimes, you want to just copy the contents of
+a video and not re-encode.  This is actually very critical when just cutting out portions from a
+file, or only changing containers (and not the codecs inside).
+
+The following command is wrong: It will re-encode your video.  It will take
+forever, and the result will (probably) look bad.
+
+    ffmpeg -i input.mp4 output.mkv
+
+What FFmpeg did here was encoding the file yet another time, because you didn't tell it to copy.
+This command however does it right:
+
+    ffmpeg -i input.mp4 -c:v copy -c:a copy output.mkv
+
+Or got mp4 to m4v, what I want to do:
+
+    ffmpeg -i input.mp4 -c:v copy -c:a copy output.m4v
+
+blog.superuser.com/2012/02/24/
+
+
+
+Links
+=====
+FFmpeg: The ultimate Video and Audio Manipulation Tool
+February 24, 2012 by slhck. 17 comments
+Difference between video codecs and containers.
+http://blog.superuser.com/2012/02/24/ffmpeg-the-ultimate-video-and-audio-manipulation-tool/
+
+Handbrake settings to convert MKV to MP4 while retaining the original quality
+Has Difference between video codecs and containers blog link.
+Copy the video and audio bitstreams:
+  ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
+http://superuser.com/questions/472420/handbrake-settings-to-convert-mkv-to-mp4-while-retaining-the-original-quality
+
+Video Conversion done right: Codecs and Software
+Link from superuser blog entry
+http://blog.superuser.com/2011/11/07/video-conversion-done-right-codecs-and-software/
+
+What's M4V and How It Differs from MP4 Format
+http://www.macxdvd.com/mac-dvd-video-converter-how-to/handbrake-rips-dvd-to-m4v-not-mp4.htm
