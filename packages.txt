@@ -1,0 +1,64 @@
+packages.txt
+Created Wed Jan 16 09:12:56 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Packages for transcoding
+
+
+Run "apt-cache policy <package name>" to display where a package came from:
+
+$ apt-cache policy libdvdnav4
+libdvdnav4:
+  Installed: 4.1.3-7
+  Candidate: 4.1.3-7
+  Version table:
+ *** 4.1.3-7 0
+        500 http://ftp.us.debian.org/debian/ squeeze/main amd64 Packages
+        100 /var/lib/dpkg/status
+$
+
+
+$ apt-cache policy handbrake-gtk
+handbrake-gtk:
+  Installed: 0.9.5-0.1
+  Candidate: 0.9.5-0.1
+  Version table:
+ *** 0.9.5-0.1 0
+        500 ftp://ftp.deb-multimedia.org/ squeeze/main amd64 Packages
+        100 /var/lib/dpkg/status
+$
+
+
+debian squeeze amd64 6.0.6
+==========================
+libdvdnav4       DVD navigation library
+libdvdread4      library for reading DVDs
+mkvtoolnix-gui   Set of tools to work with Matroska files - GUI frontend
+mkvtoolnix       Set of command-line tools to work with Matroska files
+                 It can combine multiple vobs or mkv files into one mkv.
+
+
+deb-multimedia.org/
+===================
+deb ftp://ftp.deb-multimedia.org squeeze main non-free
+
+ffmpeg            audio/video encoder, streaming server & audio/video file converter
+ffmpeg-dbg        Debug symbols for ffmpeg related packages.
+ffmpeg-doc        Documentation of the ffmpeg API.
+...
+handbrake-cli     versatile DVD ripper and video transcoder (command line)
+handbrake-gtk     versatile DVD ripper and video transcoder (GTK GUI)
+...
+lame              LAME Ain't an MP3 Encoder
+...
+libdvdcss2        Simple foundation for reading DVDs - runtime libraries
+...
+mplayer           The Ultimate Movie Player For Linux
+mplayer-doc       Documentation for mplayer
+mplayer-mt        The Ultimate Movie Player - threaded decoding version
+mplayer-nogui     The Ultimate Movie Player For Linux
+...
+mythtv            Personal video recorder application (client and server).
+...
+xbmc              XBMC Media Center (full metapackage)
